@@ -10,14 +10,14 @@ This system simulates multiple IoT devices sending real-time telemetry data (tem
 
 The Smart IoT Device Monitoring System demonstrates:
 
-- IoT ingestion architecture
-- Backend API design
-- Real-time alert processing
-- Cloud deployment
-- Containerized application design
-- Scalable system thinking
+- IoT ingestion architecture  
+- Backend API design  
+- Real-time alert processing  
+- Cloud deployment  
+- Containerized application design  
+- Scalable system thinking  
 
-This project is designed to reflect real-world IoT backend systems used in industries such as drone monitoring, industrial automation, and smart infrastructure.
+This project reflects real-world IoT backend systems used in drone monitoring, industrial automation, and smart infrastructure.
 
 ---
 
@@ -77,15 +77,15 @@ v
 
 ## ✨ Features
 
-- 📡 Simulated multi-device telemetry ingestion
-- 🌡 Real-time temperature monitoring
-- 🔋 Battery health tracking
-- 📍 GPS location tracking
-- 🚨 Automatic alert generation
-- 🗄 Persistent storage using MySQL
-- 🐳 Dockerized for container deployment
-- ☁️ Cloud deployment on AWS EC2
-- 📊 REST APIs for dashboard integration
+- 📡 Simulated multi-device telemetry ingestion  
+- 🌡 Real-time temperature monitoring  
+- 🔋 Battery health tracking  
+- 📍 GPS location tracking  
+- 🚨 Automatic alert generation  
+- 🗄 Persistent storage using MySQL  
+- 🐳 Dockerized container deployment  
+- ☁️ AWS EC2 cloud deployment  
+- 📊 REST APIs for dashboard integration  
 
 ---
 
@@ -142,12 +142,12 @@ React Frontend
 Prometheus & Grafana Monitoring
 
 🚀 Running Locally
-1. Clone Repository
+1️⃣ Clone Repository
 git clone https://github.com/yourusername/iot-monitoring-system.git
 cd iot-monitoring-system
-2. Build Docker Image
+2️⃣ Build Docker Image
 docker build -t iot-monitor .
-3. Run Container
+3️⃣ Run Container
 docker run -p 8080:8080 iot-monitor
 
 Application runs at:
