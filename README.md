@@ -22,6 +22,10 @@ This project reflects real-world IoT backend systems used in drone monitoring, i
 ---
 
 ## 🏗 System Architecture
+<div align="center">
+  <img src="architecture-diagram.png" alt="Smart IoT Architecture" width="900"/>
+</div>
+
 
 ### High-Level Architecture
 
