@@ -49,10 +49,6 @@ Monitoring Dashboard
     - Device Status
     - Alerts View
     - Health Metrics
-
-
-
-
 ---
 
 ## 🔁 Data Flow
@@ -121,32 +117,22 @@ Application runs at:
 
 http://localhost:8080
 ☁️ Deployment Steps
-
 Launch EC2 instance
-
 Install Docker
-
 Clone repository
-
 Build Docker image
-
 Run container
-
 Open port 8080
+
 
 📊 Real-World Applications
 
 Drone fleet monitoring
-
 Industrial equipment monitoring
-
 Vehicle telemetry systems
-
 Smart home automation
-
 Cold storage monitoring
 
-👨‍💻 Author
-
+ Author
 Kunal Prajapat
 Java Backend Developer | Cloud & DevOps Enthusiast
