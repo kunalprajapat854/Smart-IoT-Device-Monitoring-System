@@ -2,13 +2,13 @@
 
 A scalable IoT ingestion and monitoring platform built using **Spring Boot**, **MySQL**, and **Docker**, deployed on **AWS EC2**.
 
-This system simulates multiple IoT devices sending real-time telemetry data (temperature, battery, and location), processes it through a backend service, stores it in a database, and generates automated alerts when threshold conditions are breached.
+This system simulates multiple IoT devices sending real-time telemetry data (temperature, battery level, and location), processes it through a backend service, stores it in a database, and generates automated alerts when threshold conditions are breached.
 
 ---
 
 ## 📌 Project Overview
 
-The Smart IoT Device Monitoring System demonstrates:
+The **Smart IoT Device Monitoring System** demonstrates:
 
 - IoT ingestion architecture  
 - Backend API design  
@@ -25,39 +25,32 @@ This project reflects real-world IoT backend systems used in drone monitoring, i
 
 ### High-Level Architecture
 
+```text
+IoT Devices (Simulated)
+    - Temperature
+    - Battery Level
+    - GPS Location
+            │
+            │  HTTP / MQTT
+            ▼
+Spring Boot Backend
+    - REST Controller
+    - Service Layer
+    - Alert Engine
+            │
+            ▼
+MySQL Database
+    - Device Table
+    - Telemetry Table
+    - Alert Logs
+            │
+            ▼
+Monitoring Dashboard
+    - Device Status
+    - Alerts View
+    - Health Metrics
 
-+----------------------+
-| Simulated IoT |
-| Devices (N Devices) |
-| - Temperature |
-| - Battery Level |
-| - GPS Location |
-+----------+-----------+
-|
-| HTTP / MQTT
-v
-+--------------------------+
-| Spring Boot Backend |
-| - REST Controller |
-| - Service Layer |
-| - Alert Engine |
-+------------+-------------+
-|
-v
-+--------------------------+
-| MySQL Database |
-| - Device Table |
-| - Telemetry Table |
-| - Alert Logs |
-+------------+-------------+
-|
-v
-+--------------------------+
-| Monitoring Dashboard |
-| - Device Status |
-| - Alerts View |
-| - Health Metrics |
-+--------------------------+
+
 
 
 ---
@@ -70,30 +63,29 @@ v
 4. Alert engine evaluates threshold conditions.
 5. Alerts are generated if:
    - Temperature exceeds limit
-   - Battery is below threshold
+   - Battery is below threshold.
 6. Dashboard fetches data using REST APIs.
 
 ---
 
 ## ✨ Features
 
-- 📡 Simulated multi-device telemetry ingestion  
-- 🌡 Real-time temperature monitoring  
-- 🔋 Battery health tracking  
-- 📍 GPS location tracking  
-- 🚨 Automatic alert generation  
-- 🗄 Persistent storage using MySQL  
-- 🐳 Dockerized container deployment  
-- ☁️ AWS EC2 cloud deployment  
-- 📊 REST APIs for dashboard integration  
+- Simulated multi-device telemetry ingestion
+- Real-time temperature monitoring
+- Battery health tracking
+- GPS location tracking
+- Automatic alert generation
+- MySQL persistent storage
+- Dockerized deployment
+- AWS EC2 hosting
 
 ---
 
-## 📡 Core API Endpoint
+## 📡 Core API
 
 ### POST `/device/data`
 
-### Request Body
+Example request:
 
 ```json
 {
@@ -103,57 +95,32 @@ v
   "latitude": 22.7196,
   "longitude": 75.8577
 }
+
+
+
 🚨 Alert Rules
 Condition	Action
 Temperature > 80°C	High Temperature Alert
 Battery < 20%	Low Battery Alert
-Device inactive > threshold	Offline Alert
+Device inactive	Offline Alert
 🛠 Tech Stack
-Backend
 
-Java
+Backend: Java, Spring Boot, REST APIs
+Database: MySQL
+Cloud: AWS EC2
+Containerization: Docker
+Version Control: Git & GitHub
 
-Spring Boot
-
-Spring Data JPA
-
-REST APIs
-
-Database
-
-MySQL
-
-DevOps & Cloud
-
-Docker
-
-AWS EC2
-
-Git & GitHub
-
-Optional Enhancements
-
-MQTT Protocol
-
-WebSocket (real-time dashboard updates)
-
-React Frontend
-
-Prometheus & Grafana Monitoring
-
-🚀 Running Locally
-1️⃣ Clone Repository
+🚀 Run Locally
 git clone https://github.com/yourusername/iot-monitoring-system.git
 cd iot-monitoring-system
-2️⃣ Build Docker Image
 docker build -t iot-monitor .
-3️⃣ Run Container
 docker run -p 8080:8080 iot-monitor
 
 Application runs at:
 
 http://localhost:8080
-☁️ AWS Deployment Steps
+☁️ Deployment Steps
 
 Launch EC2 instance
 
@@ -165,35 +132,19 @@ Build Docker image
 
 Run container
 
-Open port 8080 in Security Group
+Open port 8080
 
 📊 Real-World Applications
 
-This architecture can be adapted for:
+Drone fleet monitoring
 
-🚁 Drone fleet monitoring
+Industrial equipment monitoring
 
-🏭 Industrial equipment monitoring
+Vehicle telemetry systems
 
-🚗 Vehicle telemetry systems
+Smart home automation
 
-🏠 Smart home automation
-
-❄ Cold storage temperature tracking
-
-🏥 Medical device monitoring
-
-📈 Future Improvements
-
-Integrate MQTT broker for real device communication
-
-Implement WebSocket-based live dashboard
-
-Add JWT-based authentication
-
-Deploy using Kubernetes
-
-Add monitoring with Prometheus + Grafana
+Cold storage monitoring
 
 👨‍💻 Author
 
