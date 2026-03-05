@@ -27,10 +27,10 @@ services:
     image: mysql:8
     container_name: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: Kunal@123
+      MYSQL_ROOT_PASSWORD: Kunal@123	
       MYSQL_DATABASE: iot_db
     ports:
-      - "3306:3306"
+      - "3307:3306"
 
   iot-app:
     build: .
