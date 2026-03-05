@@ -27,7 +27,7 @@ services:
     image: mysql:8
     container_name: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: Kunal@123	
+      MYSQL_ROOT_PASSWORD: root	
       MYSQL_DATABASE: iot_db
     ports:
       - "3307:3306"
@@ -43,5 +43,5 @@ services:
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/iot_db
       SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: Kunal@123
+      SPRING_DATASOURCE_PASSWORD: root
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092
