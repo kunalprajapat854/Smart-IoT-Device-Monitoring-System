@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/iot_db
+    url: jdbc:mysql://mysql:3306/iot_db
     username: root
-    password: Kunal@123
+    password: root
 
   jpa:
     hibernate:
