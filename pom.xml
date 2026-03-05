@@ -93,6 +93,8 @@
 	</dependencies>
 
 	<build>
+    <finalName>iot-monitoring-system</finalName>
+    
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
